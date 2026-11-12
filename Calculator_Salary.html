@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Salary Tax Calculator</title>
+    <link rel="stylesheet" href="./Calculator_Salary.css">
+    <script src="./Calculator_Salary.js" defer></script>
+</head>
+  <body>
+    <!-- The card sits in the middle of the page -->
+    <main class="card">
+      <h1>Salary Tax Calculator</h1>
+      <p class="subtitle">Enter your details to see your tax.</p>
+
+      <!-- INPUT SECTION -->
+      <form id="tax-form">
+        <label for="salary">Gross salary</label>
+        <input type="number" id="salary" placeholder="e.g. 3000000" required />
+
+        <label class="checkbox">
+          <input type="checkbox" id="married"/>
+          Has spouse
+        </label>
+
+        <label for="children">Number of children</label>
+        <input type="number" id="children"/>
+
+        <button type="submit">Calculate</button>
+      </form>
+
+      <!-- RESULT SECTION (hidden until you click Calculate) -->
+      <section id="result" class="result hidden">
+        <div class="row">
+          <span>Gross Salary</span>
+          <strong id="out-gross">0</strong>
+        </div>
+        <div class="row">
+          <span>Tax</span>
+          <strong id="out-tax">0</strong>
+        </div>
+        <div class="row total">
+          <span>Net Salary</span>
+          <strong id="out-net">0</strong>
+        </div>
+      </section>
+    </main>
+  </body>
+</html>
