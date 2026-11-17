@@ -1,5 +1,12 @@
 # Salary_Calculation
-TUX Class
+# Programming Language: HTML, CSS and Javascript
+# HTML
+
+
+# CSS
+
+
+# Javascript
 getElementbyid is the function that call element from HTML
 textContent write text into HTML element instead of alert
 toLocalString is showing , is instead of 300000 -> 300,000,000
